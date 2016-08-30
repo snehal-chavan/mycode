@@ -3,26 +3,31 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package mongodbjdbc;
+
+package connectmongo;
+
+import com.mongodb.BasicDBObject;
+import com.mongodb.DB;
+import com.mongodb.DBCollection;
+import com.mongodb.DBCursor;
+import com.mongodb.MongoClient;
 
 /**
  *
+ * @author abhishek
  * @author snehal
  */
-import com.mongodb.MongoClient;
-import com.mongodb.MongoException;
-import com.mongodb.WriteConcern;
+public class ConnectMongo {
 
-import com.mongodb.DB;
-import com.mongodb.DBCollection;
-import com.mongodb.BasicDBObject;
-import com.mongodb.DBObject;
-import com.mongodb.DBCursor;
+   /*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 
-import com.mongodb.ServerAddress;
-import java.util.Arrays;
 
-public class MongoDBJDBC {
+
+
 
    public static void main( String args[] ) {
 	
@@ -58,5 +63,7 @@ public class MongoDBJDBC {
          System.err.println( e.getClass().getName() + ": " + e.getMessage() );
       }
    }
-}
 
+
+    
+}
