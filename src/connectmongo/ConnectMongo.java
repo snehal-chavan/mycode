@@ -32,7 +32,6 @@ public class ConnectMongo {
    public static void main( String args[] ) {
 	
       try{
-		
          // To connect to mongodb server
          MongoClient mongoClient = new MongoClient( "localhost" , 27017 );
 			
